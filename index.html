@@ -11,9 +11,30 @@
 
 
 <body>
-    
-    
-    <section>
+        <nav id="navbar">
+            <div id="navcontent">  
+                <div class="logo">
+                    <img src="/img/logo.jpg" alt="">
+                </div>
+            
+                <ul>
+                    <li><a href="" class="active">HOME</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">TEAM </a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                </ul>
+            </div>
+        </nav>
+
+      <section class="sec0">
+
+      </section>  
+                            <!-------------------------->
+     <!-------------------------- Four Picture Section ------------------ -->
+                            <!-------------------------->
+     <section class="sec1"> 
         <div class="slide">
             <div class="content">
                 <h2>Green Chilli Chutney</h2>
@@ -54,5 +75,21 @@
         </div>
         
      </section>
- </body>
+ 
+     <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "10px";
+          } else {
+            document.getElementById("navbar").style.top = "-100px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+ 
+ 
+ 
+    </body>
 </html>
