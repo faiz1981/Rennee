@@ -10,7 +10,7 @@ box-sizing: border-box;
 
 #navbar {
     /* background-color:rgba(,,, .1); */
-    background-image:url('img/bgreept.jpg'); 
+    background-image:url(img/bgreept.jpg); 
     background-size: 33px  ;
     position: fixed;
     top: 10px;
