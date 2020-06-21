@@ -32,7 +32,7 @@ box-sizing: border-box;
     width: 100%;
     height: 80px;
     padding: 10px 100px;
-    box-sizing: border-box;
+    box-sizing: border-box;a
     transition: .5s;
 } */
 
@@ -42,10 +42,12 @@ box-sizing: border-box;
 }
 
 .logo img
-{   height: 50px; 
+{   
+    border-radius: 12px;
+    height: 50px; 
     margin-top: -7px;
-    margin-left: 20px;
-    
+    margin-left: 50px;
+    transform: skewx(-10deg);
     transition:top .5s;
 }
 
@@ -65,7 +67,7 @@ ul
 nav ul li a
 {
     text-decoration: none;
-        padding: 5px 10px;
+    padding: 5px 10px;
     font-style: normal;
     text-decoration: none;
     line-height:80px ;
@@ -76,9 +78,9 @@ nav ul li a
 nav ul li a.active,
 nav ul li a:hover
 {
-    
+    color:white;
     background: #f00 ;
-    border-radius: 5px;
+    border-radius: 7px;
 
 } 
 .sec0
@@ -125,9 +127,19 @@ nav ul li a:hover
 
 .sec1 .slide:hover
 {
-    flex-grow:2.5;
+    flex-grow:5;
 }
 
+.animate__animated{
+    position:absolute;
+    margin-top: 200PX;
+    margin-left: 400px;
+    color:white ;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+
+
+}
 
 
 .sec1 .slide:nth-child(1)
